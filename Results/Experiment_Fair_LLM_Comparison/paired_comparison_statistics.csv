@@ -1,0 +1,14 @@
+metric,n_pairs,ordinary_mean,ec_llm_mean,paired_difference_ec_minus_ordinary,paired_difference_ci95_low,paired_difference_ci95_high,paired_standardized_effect,paired_sign_flip_pvalue
+parse_success,40,1.0,1.0,0.0,0.0,0.0,,1.0
+schema_valid,40,1.0,1.0,0.0,0.0,0.0,,1.0
+schema_completeness,40,1.0,1.0,0.0,0.0,0.0,,1.0
+evidence_coverage,40,0.9931818181818182,1.0,0.006818181818181818,0.0,0.020454545454545454,0.15811388300841894,1.0
+unsupported_claim_rate,40,0.006818181818181818,0.0,-0.006818181818181818,-0.020454545454545454,0.0,-0.15811388300841894,1.0
+invalid_evidence_id_count,40,0.025,0.0,-0.025,-0.075,0.0,-0.15811388300841897,1.0
+invalid_risk_item_id_count,40,0.0,0.0,0.0,0.0,0.0,,1.0
+risk_recall,40,1.0,1.0,0.0,0.0,0.0,,1.0
+numerical_conflict_count,40,0.45,0.1,-0.35,-0.6,-0.125,-0.43627817435476496,0.012499375031248438
+numerical_conflict_rate,40,0.10604166666666666,0.035416666666666666,-0.070625,-0.12918229166666664,-0.009375,-0.36673172944798205,0.028598570071496424
+recommendation_consistency,40,1.0,1.0,0.0,0.0,0.0,,1.0
+feasible_recommendation,40,1.0,1.0,0.0,0.0,0.0,,1.0
+verifier_pass,40,0.7,0.9,0.2,0.05,0.35,0.38729833462074165,0.04039798010099495

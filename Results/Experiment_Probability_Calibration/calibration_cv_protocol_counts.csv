@@ -1,0 +1,10 @@
+method,calibration_cv,fold_count
+isotonic,group_3fold_fallback_min_class_groups_1,1
+isotonic,stratified_group_2fold,1
+isotonic,stratified_group_3fold,1
+platt,group_3fold_fallback_min_class_groups_1,1
+platt,stratified_group_2fold,1
+platt,stratified_group_3fold,1
+raw,group_3fold_fallback_min_class_groups_1,1
+raw,stratified_group_2fold,1
+raw,stratified_group_3fold,1

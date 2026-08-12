@@ -1,0 +1,52 @@
+condition,scenario,selected_drive_type,count,selection_ratio
+Knee - walking,balanced,QDD,10000,1.0
+Knee - walking,efficiency_priority,QDD,10000,1.0
+Knee - walking,lightweight_priority,QDD,10000,1.0
+Knee - walking,safety_redundancy_priority,QDD,10000,1.0
+Knee - walking and running,balanced,QDD,10000,1.0
+Knee - walking and running,efficiency_priority,QDD,10000,1.0
+Knee - walking and running,lightweight_priority,QDD,10000,1.0
+Knee - walking and running,safety_redundancy_priority,QDD,10000,1.0
+Knee - walking, running, and drop landing,balanced,EMR,9142,0.9142
+Knee - walking, running, and drop landing,balanced,HCL,155,0.0155
+Knee - walking, running, and drop landing,balanced,HRA,703,0.0703
+Knee - walking, running, and drop landing,efficiency_priority,EMR,7448,0.7448
+Knee - walking, running, and drop landing,efficiency_priority,HRA,1796,0.1796
+Knee - walking, running, and drop landing,efficiency_priority,QDD,756,0.0756
+Knee - walking, running, and drop landing,lightweight_priority,EMR,4642,0.4642
+Knee - walking, running, and drop landing,lightweight_priority,HCL,4937,0.4937
+Knee - walking, running, and drop landing,lightweight_priority,HRA,421,0.0421
+Knee - walking, running, and drop landing,safety_redundancy_priority,EMR,9991,0.9991
+Knee - walking, running, and drop landing,safety_redundancy_priority,HRA,9,0.0009
+Knee - walking and drop landing,balanced,EMR,7839,0.7839
+Knee - walking and drop landing,balanced,HCL,2161,0.2161
+Knee - walking and drop landing,efficiency_priority,EMR,7041,0.7041
+Knee - walking and drop landing,efficiency_priority,HRA,1423,0.1423
+Knee - walking and drop landing,efficiency_priority,QDD,1536,0.1536
+Knee - walking and drop landing,lightweight_priority,EMR,3674,0.3674
+Knee - walking and drop landing,lightweight_priority,HCL,6326,0.6326
+Knee - walking and drop landing,safety_redundancy_priority,EMR,5413,0.5413
+Knee - walking and drop landing,safety_redundancy_priority,HCL,4576,0.4576
+Knee - walking and drop landing,safety_redundancy_priority,HRA,11,0.0011
+Hip - walking,balanced,QDD,10000,1.0
+Hip - walking,efficiency_priority,QDD,10000,1.0
+Hip - walking,lightweight_priority,QDD,10000,1.0
+Hip - walking,safety_redundancy_priority,QDD,10000,1.0
+Hip - walking and running,balanced,QDD,10000,1.0
+Hip - walking and running,efficiency_priority,QDD,10000,1.0
+Hip - walking and running,lightweight_priority,QDD,10000,1.0
+Hip - walking and running,safety_redundancy_priority,QDD,10000,1.0
+Hip - walking, running, and drop landing,balanced,EMR,9997,0.9997
+Hip - walking, running, and drop landing,balanced,HCL,3,0.0003
+Hip - walking, running, and drop landing,efficiency_priority,EMR,9881,0.9881
+Hip - walking, running, and drop landing,efficiency_priority,HRA,119,0.0119
+Hip - walking, running, and drop landing,lightweight_priority,EMR,5654,0.5654
+Hip - walking, running, and drop landing,lightweight_priority,HCL,4346,0.4346
+Hip - walking, running, and drop landing,safety_redundancy_priority,EMR,10000,1.0
+Hip - walking and drop landing,balanced,EMR,9957,0.9957
+Hip - walking and drop landing,balanced,HCL,43,0.0043
+Hip - walking and drop landing,efficiency_priority,EMR,9145,0.9145
+Hip - walking and drop landing,efficiency_priority,HRA,855,0.0855
+Hip - walking and drop landing,lightweight_priority,EMR,1514,0.1514
+Hip - walking and drop landing,lightweight_priority,HCL,8486,0.8486
+Hip - walking and drop landing,safety_redundancy_priority,EMR,10000,1.0

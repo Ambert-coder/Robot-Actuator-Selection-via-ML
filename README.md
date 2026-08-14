@@ -7,7 +7,7 @@ This repository provides the supplementary materials for the AEI manuscript asso
 ## Repository Contents
 
 - `Code/`: Reproducibility scripts for summarizing the released data and regenerating selected tables and figures from the supplementary materials.
-- `Data/`: The curated actuator-product dataset and task-requirements dataset used in the case study.
+- `Data/`: The curated actuator-product dataset, task-requirements dataset, and eight condition-specific evidence packages used in the case study.
 - `Results/`: Selected validation, calibration, sensitivity, and LLM-comparison outputs that support the manuscript claims.
 - `Supplementary_Materials_Description.md`: A concise human-readable overview of the supplementary files.
 
@@ -20,6 +20,14 @@ This repository provides the supplementary materials for the AEI manuscript asso
 ### 2. Joint Task Requirements
 
 `Data/Joint_Task_Requirements.xlsx` contains eight static hip and knee task envelopes used in the case study. These task envelopes define the evidence-constrained operating context for the actuator-selection analysis.
+
+### 3. Evidence Packages
+
+`Data/Evidence_Packages/` contains eight condition-specific JSON evidence packages, one for each hip or knee task envelope. Each package records the joint requirements, all 176 candidate records, the ranked candidates, and the recommendation seed used by the scoring-sensitivity and fair LLM-comparison notebooks.
+
+The released filenames and task-condition identifiers are in English. Source-dataset and task-requirement provenance fields use repository-relative paths so the files remain portable after cloning.
+
+These packages contain structured engineering evidence rather than API credentials or raw provider responses. Their original feature labels are retained where necessary to preserve compatibility with the released source datasets and analysis workflow.
 
 ## Results Folder
 
@@ -45,7 +53,7 @@ The released analysis notebooks are organized in manuscript-workflow order:
 
 `Code/requirements.txt` lists the Python dependencies needed by the reproducibility script and notebooks. Historical cell outputs have been removed from the notebooks; all source-code cells are retained.
 
-The notebooks now resolve the cloned repository from the current working directory and write new files to `Reproduced_Outputs/`. The grouped-validation and calibration notebooks use the released product workbook directly. The scoring-sensitivity and LLM notebooks additionally require the upstream per-condition evidence-package JSON files. See `Code/README.md` for Windows, macOS/Linux, Jupyter, evidence-package, output-directory, and API configuration.
+The notebooks resolve the cloned repository from the current working directory and write new files to `Reproduced_Outputs/`. The grouped-validation and calibration notebooks use the released product workbook directly. The scoring-sensitivity and LLM notebooks use the eight released JSON files under `Data/Evidence_Packages/`. See `Code/README.md` for Windows, macOS/Linux, Jupyter, path overrides, output-directory, and API configuration.
 
 ## How to Use
 
@@ -72,7 +80,7 @@ The script will read the released datasets and result files and print the main s
 ## Notes on Scope and Reproducibility
 
 - This repository shares released supplementary materials only. It does not include private credentials, raw reviewer-blinding materials, or proprietary LLM access tokens.
-- The current public release does not include the per-condition evidence-package JSON files required to recompute the scoring-sensitivity and LLM-generation workflows. Their released aggregate outputs remain available under `Results/`.
+- The eight per-condition evidence packages required by the scoring-sensitivity and LLM-generation workflows are included under `Data/Evidence_Packages/`; API calling remains disabled by default.
 - The data files are curated artifacts for publication support and may not include the full internal working history of the study.
 - If you reuse the materials, please cite the parent AEI manuscript and preserve the repository structure so that file paths remain stable.
 

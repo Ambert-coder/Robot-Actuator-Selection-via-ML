@@ -71,12 +71,21 @@ These notebooks require one evidence-package JSON per task condition. The defaul
 
 ```text
 Data/Evidence_Packages/
-  03_xgboost_shap_physics_score_<condition-1>.json
+  03_xgboost_shap_physics_score_knee_walking.json
   ...
-  03_xgboost_shap_physics_score_<condition-8>.json
+  03_xgboost_shap_physics_score_hip_walking_running_drop_landing.json
 ```
 
-The evidence packages are not part of the current public release. Place a reviewed, non-sensitive package set in the default directory, or point to an external directory:
+The repository includes all eight evidence packages in this default directory. They cover walking, walking and running, walking and drop landing, and walking/running/drop-landing conditions for both the knee and hip. No path configuration is required when the repository layout is preserved.
+
+Each JSON file contains the following top-level analysis inputs:
+
+- `joint_requirements`: the task envelope and provenance metadata.
+- `candidate_records`: the full 176-candidate evidence table.
+- `ranked_candidates`: candidates ordered by the released scoring workflow.
+- `recommendation_seed`: the evidence-constrained recommendation passed to the explanation workflow.
+
+To use a separately reviewed package set instead, point to an external directory:
 
 ```python
 EVIDENCE_DIR_OVERRIDE = r"D:\path\to\evidence_packages"
@@ -109,7 +118,7 @@ Do not store credentials in the notebook, source files, generated JSON, or Git h
 
 The released results include grouped validation, probability calibration, scoring-sensitivity, full-catalogue comparison, and fair LLM comparison summaries.
 
-The LLM notebook includes the experiment and evaluation logic, but generated reports, completed reviewer materials, reviewer-blinding keys, and provider credentials are intentionally excluded. API calling is disabled by default; re-running that portion requires the user to supply their own compatible endpoint, model, credentials, and budget. The summary script never invokes an external model or API.
+The LLM notebook and its eight input evidence packages are included, but generated reports, completed reviewer materials, reviewer-blinding keys, and provider credentials are intentionally excluded. API calling is disabled by default; re-running that portion requires the user to supply their own compatible endpoint, model, credentials, and budget. The summary script never invokes an external model or API.
 
 ## Re-running the model
 

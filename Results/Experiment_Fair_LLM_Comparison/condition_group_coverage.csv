@@ -1,17 +1,17 @@
-condition,group,n
+﻿condition,group,n
 Knee - walking,ec_llm,5
 Knee - walking,ordinary_llm,5
 Knee - walking and running,ec_llm,5
 Knee - walking and running,ordinary_llm,5
-Knee - walking, running, and drop landing,ec_llm,5
-Knee - walking, running, and drop landing,ordinary_llm,5
+"Knee - walking, running, and drop landing",ec_llm,5
+"Knee - walking, running, and drop landing",ordinary_llm,5
 Knee - walking and drop landing,ec_llm,5
 Knee - walking and drop landing,ordinary_llm,5
 Hip - walking,ec_llm,5
 Hip - walking,ordinary_llm,5
 Hip - walking and running,ec_llm,5
 Hip - walking and running,ordinary_llm,5
-Hip - walking, running, and drop landing,ec_llm,5
-Hip - walking, running, and drop landing,ordinary_llm,5
+"Hip - walking, running, and drop landing",ec_llm,5
+"Hip - walking, running, and drop landing",ordinary_llm,5
 Hip - walking and drop landing,ec_llm,5
 Hip - walking and drop landing,ordinary_llm,5

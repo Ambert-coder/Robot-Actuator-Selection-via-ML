@@ -36,7 +36,14 @@ These files are included to document the behavior of the method under different 
 
 `Code/reproduce_summary.py` is a no-API Python script that inspects the released data and results package and reproduces selected summary outputs. The script is intended for local verification and does not require access to external model credentials.
 
-`Code/requirements.txt` lists the Python dependencies needed to run the reproduction script.
+The released analysis notebooks are organized in manuscript-workflow order:
+
+- `Code/01_grouped_nested_validation.ipynb`: grouped nested-validation experiment.
+- `Code/02_probability_calibration.ipynb`: probability-calibration experiment.
+- `Code/03_scoring_sensitivity.ipynb`: scoring and task-demand sensitivity experiment.
+- `Code/04_fair_llm_comparison.ipynb`: matched Ordinary-LLM versus EC-LLM comparison and evaluation workflow.
+
+`Code/requirements.txt` lists the Python dependencies needed by the reproducibility script and notebooks. Historical cell outputs have been removed from the notebooks; all source-code cells are retained.
 
 ## How to Use
 

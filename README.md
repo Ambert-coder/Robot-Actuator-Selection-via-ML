@@ -45,6 +45,8 @@ The released analysis notebooks are organized in manuscript-workflow order:
 
 `Code/requirements.txt` lists the Python dependencies needed by the reproducibility script and notebooks. Historical cell outputs have been removed from the notebooks; all source-code cells are retained.
 
+The notebooks now resolve the cloned repository from the current working directory and write new files to `Reproduced_Outputs/`. The grouped-validation and calibration notebooks use the released product workbook directly. The scoring-sensitivity and LLM notebooks additionally require the upstream per-condition evidence-package JSON files. See `Code/README.md` for Windows, macOS/Linux, Jupyter, evidence-package, output-directory, and API configuration.
+
 ## How to Use
 
 1. Clone the repository:
@@ -70,6 +72,7 @@ The script will read the released datasets and result files and print the main s
 ## Notes on Scope and Reproducibility
 
 - This repository shares released supplementary materials only. It does not include private credentials, raw reviewer-blinding materials, or proprietary LLM access tokens.
+- The current public release does not include the per-condition evidence-package JSON files required to recompute the scoring-sensitivity and LLM-generation workflows. Their released aggregate outputs remain available under `Results/`.
 - The data files are curated artifacts for publication support and may not include the full internal working history of the study.
 - If you reuse the materials, please cite the parent AEI manuscript and preserve the repository structure so that file paths remain stable.
 
